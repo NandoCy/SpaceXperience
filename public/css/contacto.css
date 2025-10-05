@@ -1,0 +1,74 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    font-family: Roboto;
+}
+.contacto{
+    color: var(--quinary-color);
+    font-family: Roboto;
+    font-size: 2rem;
+    padding: 10px;
+    width: auto;
+    margin: 10px;
+    border: 2px solid var(--quinary-color);
+    border-radius: 10px;
+    background-color: #0000004d;
+    backdrop-filter: blur(5px);
+}
+iframe[name="coment"]{
+    background-color: transparent;
+    border: none;
+}
+form{
+    width: 500px;
+    max-width: 90vw;
+    border: 2px solid var(--secondary-color);
+    background-color: var(--tertiary-color);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    font-family: Roboto;
+    color: var(--primary-color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+textarea{
+    width: 90%;
+    height: 100px;
+    max-width: 90vw;
+    max-height: 200px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 10px;
+    font-family: Roboto;
+    font-size: 1rem;
+    resize: none;
+}
+input[type="submit"], input[type="reset"]{
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    background-color: var(--quaternary-color);
+    color: var(--primary-color);
+    font-family: Roboto;
+    font-size: 1rem;
+    cursor: pointer;
+}
+input[type="reset"]{
+    background-color: var(--quinary-color);
+}

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reserva</title>
+  <link rel="stylesheet" href="1.2.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Reserva ahora tu experiencia inolvidable</h1>
+      <br>
+      <button class="boton-ovalado">Experiencia en tierra</button>
+      <button class="boton-ovalado">Experiencia en el espacio</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="layout">
+      <!-- Calendario -->
+      <section class="card" aria-labelledby="cal-title">
+        <div class="cal-header">
+          <div>
+            <div id="cal-title" class="cal-title">Mes Año</div>
+            <div style="color:var(--muted);font-size:0.9rem" id="cal-sub">Selecciona un mes con las flechas</div>
+          </div>
+          <div class="cal-nav">
+            <button id="prev">◀</button>
+            <button id="next">▶</button>
+          </div>
+        </div>
+
+        <div class="weekdays" aria-hidden>
+          <div>Dom</div><div>Lun</div><div>Mar</div><div>Mié</div><div>Jue</div><div>Vie</div><div>Sáb</div>
+        </div>
+        <div class="days" id="days"></div>
+      </section>
+
+      <!-- Cronometro y Frame -->
+      <aside class="card">
+        <div class="timer" role="region" aria-label="Cronometro regresivo">
+          <div style="text-align:center">
+            <div style="font-weight:600">Cronómetro regresivo</div>
+            <div style="color:var(--muted);font-size:0.9rem">para su viaje</div>
+          </div>
+
+          <div class="time-display" id="time" style="font-size:1.5rem; text-align:center; margin-top:10px;">
+            00d 00h 00m 00s
+          </div>
+
+          <div class="frame" style="margin-top:20px; text-align:center;">
+            <button class="boton-ovalado" onclick="AbrirFrame()">📍 Ver ubicación</button>
+            <br><br>
+            <iframe id="ubi" src="" width="300" height="250" style="display:none; border:1px solid #ccc; border-radius:10px;"></iframe>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+<script src="1.3.js"></script>
+</body>
+</html>
